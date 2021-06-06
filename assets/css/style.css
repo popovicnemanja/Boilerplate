@@ -1,3 +1,9 @@
+:root {
+  --ff: sans-serif;
+  --white: #fff;
+  --fs-def: 62.5%;
+}
+
 .icon::before {
   display: inline-block;
   font-style: normal;
@@ -11,12 +17,11 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
   font-size: 62.5%;
+  font-size: var(--fs-def);
 }
 
 /*# sourceMappingURL=style.css.map */

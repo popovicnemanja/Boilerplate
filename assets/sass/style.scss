@@ -2,12 +2,10 @@
 
 *, *::before, *::after {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
 }
+
+
 
 body {
-  font-size: 62.5%;
+	@include a.var(font-size, fs-def);
 }
-
-

@@ -1,1 +1,103 @@
-$clr-primary: red;
+$vars: (
+    ff: sans-serif, 
+    
+    //clr-primary: ,
+    white: #fff,
+    
+    //fw-n: 400,  
+    //fw-m: 600,
+    //fw-b: 800,
+
+    fs-def: 62.5%,
+    //fs-n: 1.4rem,
+    //fs-m: 2rem,
+    //fs-l: 2.5rem,
+);
+
+    
+:root {
+    @each $property, $value in $vars {
+        --#{$property}: #{$value};
+    }
+}
+    
+    
+    
+@mixin var($property, $variable) {
+    #{$property}: map-get($vars, $variable);  // browser support
+    #{$property}: var(--#{$variable});
+}
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
